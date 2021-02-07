@@ -177,3 +177,9 @@
         font-size: 12px;
     }
 }
+
+@media screen and (max-height: 400px) {
+    .nav_link {
+        margin-bottom: 20px;
+    }
+}
