@@ -49,10 +49,10 @@
         max-height: 24px;
     }
     .logo_name,
-    .nav_link {
+    .nav_link_text {
         display: none;
     }
-    .nav_item {
+    .nav_link {
         padding-left: 38px;
         margin-bottom: 63px;
     }
@@ -77,7 +77,7 @@
     .menu {
         left: 54px;
     }
-    .nav_item {
+    .nav_link {
         padding-left: 15px;
     }
 
@@ -118,7 +118,7 @@
     .sidebar {
         width: 12px;
     }
-    .nav_link_img, 
+    .nav_link i, 
     .logo_img {
         display: none;
     }

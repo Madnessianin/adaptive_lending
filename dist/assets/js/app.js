@@ -9,6 +9,7 @@ const menuBtn = document.getElementById("menu_toggle"),
       headerTitle = document.querySelector('.header_title'),
       header = document.querySelector('.header'),
       main = document.querySelector('.main');
+      navLinkText = document.querySelectorAll('.nav_link_text');
 
 
 const indent = window.getComputedStyle(main, null).getPropertyValue("padding-left").toString();
@@ -17,7 +18,7 @@ const indent = window.getComputedStyle(main, null).getPropertyValue("padding-lef
 menuBtn.onclick = () => {
     if (menuBtn.classList.contains("active")) {
         menuBtn.classList.remove("active")
-        navLink.forEach(item => {
+        navLinkText.forEach(item => {
             item.removeAttribute("style");
         })
         logoName.removeAttribute("style")
@@ -26,7 +27,7 @@ menuBtn.onclick = () => {
         
     } else {
         menuBtn.classList.add("active")
-        navLink.forEach(item => {
+        navLinkText.forEach(item => {
             item.style.display = "block";
         })
         logoName.style.display = "block";
@@ -61,4 +62,18 @@ window.addEventListener('scroll', () => {
         header.removeAttribute("style");
         header.removeAttribute("style");
     }
+})
+
+/* Activeted link */ 
+
+navLink.forEach(item => {
+    item.addEventListener('click', event => {
+        let $this = event.currentTarget
+        navLink.forEach(i => {
+            if (i !== $this) {
+                i.classList.remove("active")
+            } 
+        })
+        $this.classList.add("active");
+    })
 })
