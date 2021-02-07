@@ -1,0 +1,179 @@
+
+@media screen and (max-width: 1350px) {
+    
+    .coupons {
+        grid-template-columns: repeat(2, 296px);
+        grid-template-rows: repeat(6, 144px);
+    }
+
+    .coupons_title,
+    .coupons_subtitle,
+    .coupons_kind_des {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        width: 104px;
+    }
+
+    .main {
+        padding-left: 104px;
+    }
+
+    .conteiner {
+        padding: 27px;
+    }
+    .header {
+        width: calc(100% - 104px);
+    }
+
+    .header_title {
+        text-align: right;
+    }
+    .menu {
+        display: block;
+        left: 104px;
+    }
+
+    .logo {
+        margin-top: -65px;
+    }
+
+    .logo_name {
+        font-size: 14px;
+    }
+    .logo_img {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    .logo_name,
+    .nav_link {
+        display: none;
+    }
+    .nav_item {
+        padding-left: 38px;
+        margin-bottom: 63px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        width: 54px;
+    }
+
+    .main {
+        padding-left: 54px;
+    }
+
+    .conteiner {
+        padding: 20px;
+    }
+    .header {
+        width: calc(100% - 54px);
+    }
+    .menu {
+        left: 54px;
+    }
+    .nav_item {
+        padding-left: 15px;
+    }
+
+    
+    .logo_img {
+        margin: 0;
+        margin-left: -20px;
+    }
+    
+    .coupons {
+        grid-template-columns: repeat(2, 268px);
+        grid-template-rows: repeat(6, 130px);
+    }
+    .coupons_kihd {
+        font-size: 28px;
+    }
+
+    .coupons_title,
+    .coupons_subtitle,
+    .coupons_kind_des {
+        font-size: 12px;
+    }
+    .coupons_title {
+        margin: 0;
+    }
+
+    .coupons_subtitle {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+
+    
+    .sidebar {
+        width: 12px;
+    }
+    .nav_link_img, 
+    .logo_img {
+        display: none;
+    }
+    .menu {
+        left: 12px;
+    }
+    .main {
+        padding-left: 12px;
+        padding-top: 169px;
+    }
+    .header {
+        padding: 27px 20px;
+        width: calc(100% - 12px);
+        height: 169px;
+    }
+    .header_title {
+        font-size: 24px;
+    }
+    .conteiner {
+        padding: 20px;
+    }
+
+    .coupons {
+        grid-template-columns: repeat(1, 347px);
+        grid-template-rows: repeat(12, 161px);
+    }
+
+    .coupons_kihd {
+        font-size: 28px;
+    }
+
+    .coupons_kihd {
+        font-size: 36px;
+    }
+
+    .coupons_title,
+    .coupons_subtitle,
+    .coupons_kind_des {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .coupons {
+        grid-template-columns: repeat(1, 268px);
+        grid-template-rows: repeat(12, 130px);
+    }
+    .coupons_kihd {
+        font-size: 28px;
+    }
+
+    .coupons_title,
+    .coupons_subtitle,
+    .coupons_kind_des {
+        font-size: 12px;
+    }
+}

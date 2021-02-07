@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-index-fixed-elem;
+    width: calc(100% - #{$sidebar-width});
+    height: $header-height;
+    padding: 40px 60px;
+    background-color: $white;
+}
+.header_title {
+    margin: 0 0 31px 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: $black;
+}
+.search_form {
+    position: relative;
+    width: 100%;
+}
+.search_img {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.search_input {
+    display: block;
+    width: inherit;
+    height: 52px;
+    padding: 14px 16px 12px 44px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    background: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 50px;
+    color: rgba($color: #000, $alpha: .45);
+
+    &::placeholder {
+        color: rgba($color: #000, $alpha: .45);
+    }
+}
